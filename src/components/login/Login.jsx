@@ -4,6 +4,7 @@ import LoginContext from '../../contexts/login.context';
 const Login = () => {
 	console.log('LOGIN');
 	const { setUser } = useContext(LoginContext);
+
 	return (
 		<form onSubmit={e => handleSubmit(e, setUser)}>
 			<input type='text' name='name' />
